@@ -1,0 +1,31 @@
+{
+    "team_name": "AI Gangsta",
+    "students": [
+        {
+            "student_id": "k12315330",
+            "first_name": "Anton",
+            "last_name": "Sadeq",
+            "email": "anton.sadeq@gmail.com",
+            "github_user": "antonsadeq"
+        },
+               {
+            "student_id": "k12456302",
+            "first_name": "Yasaman",
+            "last_name": "Behravan",
+            "email": "yasibehravan@gmail.com",
+            "github_user": "yasamanbehravan"
+        },       {
+            "student_id": "k12544765",
+            "first_name": "Chedi",
+            "last_name": "shaabane",
+            "email": "chabanchadi@mail.com",
+            "github_user": "chadi2001"
+        },       {
+            "student_id": "k12456307",
+            "first_name": "Zahra",
+            "last_name": "karami",
+            "email": "first.last@mail.com",
+            "github_user": "mygitusername"
+        }
+    ]
+}

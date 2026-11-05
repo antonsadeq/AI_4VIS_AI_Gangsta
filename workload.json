@@ -1,0 +1,25 @@
+{
+    "team_name": "AI Gangsta",
+    "students": [
+        {
+            "first_name": "Anton",
+            "last_name": "Sadeq",
+            "workload": 0.25
+        },
+        {
+            "first_name": "Chedi",
+            "last_name": "chaabane",
+            "workload": 0.25
+        },
+        {
+            "first_name": "Yasaman",
+            "last_name": "Behravan",
+            "workload": 0.25
+        },
+        {
+            "first_name": "Zahra",
+            "last_name": "Karami",
+            "workload": 0.25
+        }
+    ]
+} 
