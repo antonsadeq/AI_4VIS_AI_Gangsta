@@ -1,0 +1,48 @@
+{
+  "source_checkpoint": "best.pt",
+  "source_sha256": "94c861a35c307a5370aae2b4f69bd8f9c772d7ede62cb951cce9d9bc4d1e1110",
+  "epoch": 89,
+  "opset": 17,
+  "onnx_sha256": "47e147263caae0b53b2d144d431404c4df72ffff4d6bbb542b8f5db2510c814e",
+  "input": {
+    "name": "image",
+    "shape": [
+      "batch",
+      3,
+      1280,
+      1280
+    ],
+    "dtype": "float32"
+  },
+  "output": {
+    "name": "logits",
+    "shape": [
+      "batch",
+      3,
+      1280,
+      1280
+    ],
+    "dtype": "float32"
+  },
+  "preprocessing": {
+    "resize": "LongestMaxSize(1280), bilinear; 800x1200 -> 853x1280",
+    "pad": "centre pad to 1280x1280, image fill 0, mask fill 255",
+    "normalize": "x/255 then (x - mean)/std with ImageNet mean/std",
+    "mean": [
+      0.48500001430511475,
+      0.4560000002384186,
+      0.4059999883174896
+    ],
+    "std": [
+      0.2290000021457672,
+      0.2240000069141388,
+      0.22499999403953552
+    ],
+    "channel_order": "RGB"
+  },
+  "verification": {
+    "image": "rose2_haricot_0012",
+    "max_abs_diff": 0.00025528669357299805,
+    "argmax_agreement": 0.999998779296875
+  }
+}
