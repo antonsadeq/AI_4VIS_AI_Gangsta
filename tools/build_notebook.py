@@ -330,7 +330,7 @@ for d, lab_, col in [(small[small.status == "detected"].green, "annotated small 
 ax.axvline(0, color=C["ink2"], lw=1, ls=":"); ax.axvline(1, color=C["ink2"], lw=1, ls=":")
 ax.text(-0.02, ax.get_ylim()[1] * 0.55, "typical\nsoil", ha="right", va="center", fontsize=8, color=C["ink2"]); ax.text(1.02, ax.get_ylim()[1] * 0.55, "typical\nplant", ha="left", va="center", fontsize=8, color=C["ink2"])
 ax.set_xlabel("greenness of the object (excess-green index, rescaled per image)"); ax.set_ylabel("density"); ax.set_title("how green are they?")
-ax.legend(loc="upper right", fontsize=8)
+ax.legend(loc="upper left", bbox_to_anchor=(0.0, -0.22), fontsize=8, ncol=1)   # below the axes, never over the curves
 fig.suptitle("Figure 7 · The false-plant error is boundary dilation, not hallucinated plants; the isolated blobs are as faint as the missed seedlings", x=0.01, ha="left", fontsize=11)
 plt.tight_layout(); savefig("fig07_false_plants")
 print(f"isolated false-plant blobs: {len(fp):,} (median {int(fp.area.median())} px; {(fp.area < 50).mean()*100:.0f} % below 50 px; predicted as weed in {(fp.pred == 2).mean()*100:.0f} %)")
