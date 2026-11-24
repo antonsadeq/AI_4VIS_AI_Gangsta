@@ -1,0 +1,182 @@
+{
+  "split": "val",
+  "n_images": 30,
+  "wall_time_s": 22.43296609999925,
+  "pure_inference_time_s": 7.222655699995812,
+  "ms_per_image_inference": 240.7551899998604,
+  "class_names": [
+    "soil",
+    "crop",
+    "weed"
+  ],
+  "ignore_index": 255,
+  "network_input_size": 1280,
+  "epoch": 89,
+  "config": {
+    "data": "data/beans_deeplab_clean_v1",
+    "outdir": "runs/deeplabv3plus_mobilenetv2_rgb1280",
+    "architecture": "deeplab",
+    "model_type": "deeplabv3plus",
+    "backbone": "mobilenetv2",
+    "input_mode": "rgb",
+    "in_channels": 3,
+    "pretrained": true,
+    "num_classes": 3,
+    "image_size": 1280,
+    "loss": "cedice",
+    "ce_weight_lambda": 1.0,
+    "dice_weight_lambda": 0.5,
+    "focal_weight_lambda": 0.15,
+    "focal_gamma": 2.0,
+    "tversky_alpha": 0.5,
+    "tversky_beta": 0.5,
+    "tversky_gamma": 1.0,
+    "class_weights": [
+      0.137201,
+      1.332565,
+      1.0
+    ],
+    "class_weights_path": "data/beans_deeplab_clean_v1/class_weights.json",
+    "ignore_index": 255,
+    "optimizer": "adamw",
+    "lr": 0.0003,
+    "backbone_lr_mult": 1.0,
+    "weight_decay": 0.0001,
+    "scheduler": "cosine",
+    "warmup_epochs": 3,
+    "min_lr": 1e-06,
+    "epochs": 400,
+    "patience": 30,
+    "batch_size": 2,
+    "num_workers": 4,
+    "amp": true,
+    "compile": false,
+    "seed": 48,
+    "monitor_metric": "val_mIoU",
+    "eval_every": 1
+  },
+  "source": {
+    "original_file_sha256": "a71e8d6699c843b95d35f3dc6a770cbbc1bdcd6e3ad7fb7d802b02c2262fbc06",
+    "note": "repacked from the training checkpoint; tensors unchanged, run-folder name in config normalised"
+  },
+  "val_metrics": {
+    "pixel_acc": 0.9702536085873388,
+    "mIoU": 0.8953628790888759,
+    "FWmIoU": 0.9440490303836554,
+    "mF1": 0.9439629775985537,
+    "IoU_soil": 0.9678002079441101,
+    "prec_soil": 0.9931304061862487,
+    "rec_soil": 0.9743226962707051,
+    "F1_soil": 0.9836366558322853,
+    "IoU_crop": 0.8403381459021022,
+    "prec_crop": 0.8775350296020062,
+    "rec_crop": 0.9519806646407947,
+    "F1_crop": 0.9132431969345317,
+    "IoU_weed": 0.8779502834204153,
+    "prec_weed": 0.912035087415636,
+    "rec_weed": 0.9591704023760331,
+    "F1_weed": 0.9350090800288446,
+    "val_loss": 0.1821533888578415,
+    "time_eval_s": 0.7047591209411621
+  },
+  "checkpoint": "model/best.pt",
+  "checkpoint_sha256": "94c861a35c307a5370aae2b4f69bd8f9c772d7ede62cb951cce9d9bc4d1e1110",
+  "n_params": 4379027,
+  "backend": "torch",
+  "device": "cuda",
+  "autocast_fp16": false,
+  "torch": "2.7.1+cu118",
+  "gpu": "Quadro RTX 5000 with Max-Q Design",
+  "python": "3.11.13",
+  "numpy": "1.26.0",
+  "outputs": {
+    "masks": "masks/<id>.png",
+    "per_image": "per_image.csv",
+    "probs": "probs/<id>.npy",
+    "panels": "panels/<id>.jpg"
+  },
+  "network_resolution": {
+    "pixel_acc": 0.970245945681907,
+    "mIoU": 0.8953355771087188,
+    "FWmIoU": 0.9440359519087528,
+    "mF1": 0.9439472363581012,
+    "n_pixels": 32755200,
+    "IoU_soil": 0.9677935085140188,
+    "prec_soil": 0.9931359213328961,
+    "rec_soil": 0.9743105981323579,
+    "F1_soil": 0.9836331955834624,
+    "gt_pixels_soil": 25127833,
+    "pred_pixels_soil": 24651524,
+    "IoU_crop": 0.8402906301968315,
+    "prec_crop": 0.8775246047578367,
+    "rec_crop": 0.9519319527852221,
+    "F1_crop": 0.9132151372274897,
+    "gt_pixels_crop": 2463466,
+    "pred_pixels_crop": 2672349,
+    "IoU_weed": 0.8779225926153059,
+    "prec_weed": 0.9119749188365938,
+    "rec_weed": 0.9592039041801924,
+    "F1_weed": 0.9349933762633517,
+    "gt_pixels_weed": 5163901,
+    "pred_pixels_weed": 5431327
+  },
+  "original_resolution": {
+    "pixel_acc": 0.9696054166666667,
+    "mIoU": 0.8932763858756391,
+    "FWmIoU": 0.9428774289966628,
+    "mF1": 0.9427612090548951,
+    "n_pixels": 28800000,
+    "IoU_soil": 0.9669487050070568,
+    "prec_soil": 0.9927098913002359,
+    "rec_soil": 0.9738640431685999,
+    "F1_soil": 0.9831966665379692,
+    "gt_pixels_soil": 22095690,
+    "pred_pixels_soil": 21676220,
+    "IoU_crop": 0.836377012818104,
+    "prec_crop": 0.8750272842501905,
+    "rec_crop": 0.9498376092535014,
+    "F1_crop": 0.9108990223468326,
+    "gt_pixels_crop": 2165148,
+    "pred_pixels_crop": 2350257,
+    "IoU_weed": 0.8765034398017565,
+    "prec_weed": 0.911255481538478,
+    "rec_weed": 0.9583044183045241,
+    "F1_weed": 0.9341879382798838,
+    "gt_pixels_weed": 4539162,
+    "pred_pixels_weed": 4773523
+  },
+  "confusion_matrix_network_resolution": [
+    [
+      24482314,
+      245083,
+      400436
+    ],
+    [
+      40757,
+      2345052,
+      77657
+    ],
+    [
+      128453,
+      82214,
+      4953234
+    ]
+  ],
+  "confusion_matrix_original_resolution": [
+    [
+      21518198,
+      221577,
+      355915
+    ],
+    [
+      40900,
+      2056539,
+      67709
+    ],
+    [
+      117122,
+      72141,
+      4349899
+    ]
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "condition": "grayscale",
+  "family": "colour",
+  "level": 1.0,
+  "split": "test",
+  "n_images": 60,
+  "network_resolution": {
+    "pixel_acc": 0.784244013164322,
+    "mIoU": 0.26161206035433376,
+    "FWmIoU": 0.6150417264810913,
+    "mF1": 0.29342541425238833,
+    "n_pixels": 65510400,
+    "IoU_soil": 0.7842326844554046,
+    "prec_soil": 0.7842330795237212,
+    "rec_soil": 0.999999357635063,
+    "F1_soil": 0.879069968045982,
+    "gt_pixels_soil": 51372667,
+    "pred_pixels_soil": 65506844,
+    "IoU_crop": 0.0005995429521066717,
+    "prec_crop": 0.9855237013908601,
+    "rec_crop": 0.0005995482321184136,
+    "F1_crop": 0.001198367431465774,
+    "gt_pixels_crop": 5791027,
+    "pred_pixels_crop": 3523,
+    "IoU_weed": 3.953655489962148e-06,
+    "prec_weed": 1.0,
+    "rec_weed": 3.953655489962148e-06,
+    "F1_weed": 7.90727971726443e-06,
+    "gt_pixels_weed": 8346706,
+    "pred_pixels_weed": 33
+  },
+  "original_resolution": {
+    "pixel_acc": 0.7842241319444444,
+    "mIoU": 0.2615973123664772,
+    "FWmIoU": 0.6150104041214232,
+    "mF1": 0.2934048433207858,
+    "n_pixels": 57600000,
+    "IoU_soil": 0.7842132076490815,
+    "prec_soil": 0.7842136161147135,
+    "rec_soil": 0.9999993358186116,
+    "F1_soil": 0.8790577317633222,
+    "gt_pixels_soil": 45168384,
+    "pred_pixels_soil": 57597003,
+    "IoU_crop": 0.0005749140721411131,
+    "prec_crop": 0.9861906365779723,
+    "rec_crop": 0.0005749187004481145,
+    "F1_crop": 0.0011491674717314811,
+    "gt_pixels_crop": 5092894,
+    "pred_pixels_crop": 2969,
+    "IoU_weed": 3.8153782089034035e-06,
+    "prec_weed": 1.0,
+    "rec_weed": 3.8153782089034035e-06,
+    "F1_weed": 7.630727303696135e-06,
+    "gt_pixels_weed": 7338722,
+    "pred_pixels_weed": 28
+  },
+  "confusion_matrix_network_resolution": [
+    [
+      51372634,
+      33,
+      0
+    ],
+    [
+      5787555,
+      3472,
+      0
+    ],
+    [
+      8346655,
+      18,
+      33
+    ]
+  ],
+  "confusion_matrix_original_resolution": [
+    [
+      45168354,
+      30,
+      0
+    ],
+    [
+      5089966,
+      2928,
+      0
+    ],
+    [
+      7338683,
+      11,
+      28
+    ]
+  ],
+  "checkpoint": "C:\\workspace_farming\\practical work\\DeepLab_beans\\AI_4VIS_AI_Gangsta\\model\\best.pt",
+  "checkpoint_sha256": "94c861a35c307a5370aae2b4f69bd8f9c772d7ede62cb951cce9d9bc4d1e1110",
+  "epoch": 89,
+  "device": "cuda"
+}

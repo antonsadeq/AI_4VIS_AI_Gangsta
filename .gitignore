@@ -1,0 +1,7 @@
+# large or regenerable artefacts stay local (see README for how to rebuild them)
+data/
+predictions/**/masks/
+predictions/**/probs/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/

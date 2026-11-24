@@ -1,0 +1,17 @@
+# Minimal environment for the inference and evaluation scripts (Python 3.9+).
+# Install:  pip install -r scripts/requirements.txt
+# For GPU inference install the torch build matching your CUDA first (https://pytorch.org),
+# then run this file; pip keeps the already-installed torch.
+
+numpy>=1.24,<2.3
+opencv-python>=4.8
+pandas>=2.0
+
+# PyTorch backend (predict.py --backend torch, export_onnx.py, inspect_model.py)
+torch>=2.1
+torchvision>=0.16
+segmentation-models-pytorch==0.5.0      # version used for training; the checkpoint keys depend on it
+
+# ONNX backend (predict.py --backend onnx) — enough on its own for inference without torch
+onnxruntime>=1.17                       # or onnxruntime-gpu
+onnx>=1.15                              # only needed to re-export (export_onnx.py)

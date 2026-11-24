@@ -1,0 +1,95 @@
+{
+  "condition": "downscale_0.25",
+  "family": "resolution",
+  "level": 0.25,
+  "split": "test",
+  "n_images": 60,
+  "network_resolution": {
+    "pixel_acc": 0.9559420336313013,
+    "mIoU": 0.8480992672108784,
+    "FWmIoU": 0.920110690510971,
+    "mF1": 0.9160481866468748,
+    "n_pixels": 65510400,
+    "IoU_soil": 0.9547934438940056,
+    "prec_soil": 0.992932644936803,
+    "rec_soil": 0.9613265162970807,
+    "F1_soil": 0.9768739985049563,
+    "gt_pixels_soil": 51372667,
+    "pred_pixels_soil": 49737419,
+    "IoU_crop": 0.7984538852740011,
+    "prec_crop": 0.8569264781279594,
+    "rec_crop": 0.921269059874872,
+    "F1_crop": 0.8879336766006137,
+    "gt_pixels_crop": 5791027,
+    "pred_pixels_crop": 6225848,
+    "IoU_weed": 0.7910504724646283,
+    "prec_weed": 0.8278028597695245,
+    "rec_weed": 0.9468578382897397,
+    "F1_weed": 0.8833368848350542,
+    "gt_pixels_weed": 8346706,
+    "pred_pixels_weed": 9547133
+  },
+  "original_resolution": {
+    "pixel_acc": 0.9554882291666666,
+    "mIoU": 0.846885402397595,
+    "FWmIoU": 0.9193146754607967,
+    "mF1": 0.9153130040835945,
+    "n_pixels": 57600000,
+    "IoU_soil": 0.9542040405503592,
+    "prec_soil": 0.992565022697338,
+    "rec_soil": 0.9610734357908399,
+    "F1_soil": 0.9765654156375897,
+    "gt_pixels_soil": 45168384,
+    "pred_pixels_soil": 43735305,
+    "IoU_crop": 0.7969713747779171,
+    "prec_crop": 0.8560984368715219,
+    "rec_crop": 0.9202508436264332,
+    "F1_crop": 0.887016216244861,
+    "gt_pixels_crop": 5092894,
+    "pred_pixels_crop": 5474534,
+    "IoU_weed": 0.7894807918645086,
+    "prec_weed": 0.8270697070056224,
+    "rec_weed": 0.94556627162059,
+    "F1_weed": 0.8823573803683326,
+    "gt_pixels_weed": 7338722,
+    "pred_pixels_weed": 8390161
+  },
+  "confusion_matrix_network_resolution": [
+    [
+      49385907,
+      740808,
+      1245952
+    ],
+    [
+      57896,
+      5335094,
+      398037
+    ],
+    [
+      293616,
+      149946,
+      7903144
+    ]
+  ],
+  "confusion_matrix_original_resolution": [
+    [
+      43410134,
+      655948,
+      1102302
+    ],
+    [
+      57543,
+      4686740,
+      348611
+    ],
+    [
+      267628,
+      131846,
+      6939248
+    ]
+  ],
+  "checkpoint": "C:\\workspace_farming\\practical work\\DeepLab_beans\\AI_4VIS_AI_Gangsta\\model\\best.pt",
+  "checkpoint_sha256": "94c861a35c307a5370aae2b4f69bd8f9c772d7ede62cb951cce9d9bc4d1e1110",
+  "epoch": 89,
+  "device": "cuda"
+}

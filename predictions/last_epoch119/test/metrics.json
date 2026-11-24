@@ -1,0 +1,122 @@
+{
+  "split": "test",
+  "n_images": 60,
+  "wall_time_s": 35.455552200000966,
+  "pure_inference_time_s": 14.756363299995428,
+  "ms_per_image_inference": 245.93938833325714,
+  "class_names": [
+    "soil",
+    "crop",
+    "weed"
+  ],
+  "ignore_index": 255,
+  "network_input_size": 1280,
+  "epoch": 119,
+  "config": {
+    "outdir": "runs/deeplabv3plus_mobilenetv2_rgb1280"
+  },
+  "source": {
+    "original_file_sha256": "5f389fe2eb7b57007e266e4203fc2877f7cd3b247db91958589d6f91bd409152",
+    "note": "repacked from the training checkpoint; tensors unchanged, run-folder name in config normalised"
+  },
+  "checkpoint": "model/last.pt",
+  "checkpoint_sha256": "042d61308d0eed8adcb150436cd134c92b9139b53a53a6f87358d65e2b98d897",
+  "n_params": 4379027,
+  "backend": "torch",
+  "device": "cuda",
+  "autocast_fp16": false,
+  "torch": "2.7.1+cu118",
+  "gpu": "Quadro RTX 5000 with Max-Q Design",
+  "python": "3.11.13",
+  "numpy": "1.26.0",
+  "outputs": {
+    "masks": "masks/<id>.png",
+    "per_image": "per_image.csv",
+    "probs": null,
+    "panels": null
+  },
+  "network_resolution": {
+    "pixel_acc": 0.9668445773495506,
+    "mIoU": 0.8853453851062563,
+    "FWmIoU": 0.9381906028287225,
+    "mF1": 0.9382694031427611,
+    "n_pixels": 65510400,
+    "IoU_soil": 0.963942036977536,
+    "prec_soil": 0.9928318164544911,
+    "rec_soil": 0.9706977058442381,
+    "F1_soil": 0.9816400065055095,
+    "gt_pixels_soil": 51372667,
+    "pred_pixels_soil": 50227369,
+    "IoU_crop": 0.8539584726882319,
+    "prec_crop": 0.8853996452241014,
+    "rec_crop": 0.960076511471972,
+    "F1_crop": 0.9212271852562002,
+    "gt_pixels_crop": 5791027,
+    "pred_pixels_crop": 6279457,
+    "IoU_weed": 0.8381356456530011,
+    "prec_weed": 0.878675068367295,
+    "rec_weed": 0.9478249263841328,
+    "F1_weed": 0.9119410176665737,
+    "gt_pixels_weed": 8346706,
+    "pred_pixels_weed": 9003574
+  },
+  "original_resolution": {
+    "pixel_acc": 0.9660179166666667,
+    "mIoU": 0.8829018570897684,
+    "FWmIoU": 0.9367064905637648,
+    "mF1": 0.9368555725609723,
+    "n_pixels": 57600000,
+    "IoU_soil": 0.9629297453376099,
+    "prec_soil": 0.9922356282708715,
+    "rec_soil": 0.9702405558720011,
+    "F1_soil": 0.9811148337068915,
+    "gt_pixels_soil": 45168384,
+    "pred_pixels_soil": 44167128,
+    "IoU_crop": 0.8509675659897477,
+    "prec_crop": 0.883740466488997,
+    "rec_crop": 0.9582408351715155,
+    "F1_crop": 0.9194840381060044,
+    "gt_pixels_crop": 5092894,
+    "pred_pixels_crop": 5522231,
+    "IoU_weed": 0.8348082599419479,
+    "prec_weed": 0.8770736783529931,
+    "rec_weed": 0.9454255114173831,
+    "F1_weed": 0.909967845870021,
+    "gt_pixels_weed": 7338722,
+    "pred_pixels_weed": 7910641
+  },
+  "confusion_matrix_network_resolution": [
+    [
+      49867330,
+      564261,
+      941076
+    ],
+    [
+      79916,
+      5559829,
+      151282
+    ],
+    [
+      280123,
+      155367,
+      7911216
+    ]
+  ],
+  "confusion_matrix_original_resolution": [
+    [
+      43824198,
+      504592,
+      839594
+    ],
+    [
+      79843,
+      4880219,
+      132832
+    ],
+    [
+      263087,
+      137420,
+      6938215
+    ]
+  ]
+}

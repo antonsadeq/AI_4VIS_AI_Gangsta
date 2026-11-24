@@ -1,0 +1,34 @@
+{
+  "seed_requested": 48,
+  "seed_used": 48,
+  "train_ratio": 0.7,
+  "val_ratio": 0.1,
+  "test_ratio": 0.2,
+  "num_train": 210,
+  "num_val": 30,
+  "num_test": 60,
+  "stratify_on": "has_crop",
+  "stratify_active": true,
+  "required_classes": [
+    "has_soil",
+    "has_crop",
+    "has_weed"
+  ],
+  "per_split_class_counts": {
+    "train": {
+      "has_soil": 210,
+      "has_crop": 191,
+      "has_weed": 210
+    },
+    "val": {
+      "has_soil": 30,
+      "has_crop": 27,
+      "has_weed": 30
+    },
+    "test": {
+      "has_soil": 60,
+      "has_crop": 55,
+      "has_weed": 60
+    }
+  }
+}
